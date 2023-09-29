@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Project Name -->
+    <title>Stopwatch</title>
+    <!-- for logo of stopwatch-->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/images/stopwatch.png"
+    />
+    <!-- CSS file for styling -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="name">Stopwatch</h1>
+    <!-- Container for Stopwatch -->
+    <div class="container">
+      <!-- display of stopwatch -->
+      <h1 id="displayTime">00:00:00:000</h1>
+      <!--All the buttons for different functions -->
+      <div class="buttons">
+        <!-- button for onclick function to stop the Watch -->
+        <img src="images/Stop.png" alt="stop" onclick="watchStop()" />
+        <!-- button for onclick function to start the Watch -->
+        <img
+          id="start"
+          src="images/Start.png"
+          alt="start"
+          onclick="watchStart()"
+        />
+        <!-- button for onclick function to reset the watch -->
+        <img src="images/Reset.png" alt="reset" onclick="watchReset()" />
+      </div>
+    </div>
+    <!-- javascript file for all the functionalities -->
+    <script src="script.js"></script>
+  </body>
+</html>
